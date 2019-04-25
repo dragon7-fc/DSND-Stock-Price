@@ -6,3 +6,5 @@
 
 # mac osx
 .DS_Store
+
+*.pyc

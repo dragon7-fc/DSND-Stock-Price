@@ -15,10 +15,10 @@ def return_figures():
 
     """
 
-    # first chart plots arable land from 1990 to 2015 in top 10 economies 
+    # first chart plots arable land from 1990 to 2015 in top 10 economies
     # as a line chart
-    
-    graph_one = []    
+
+    graph_one = []
     graph_one.append(
       go.Scatter(
       x = [0, 1, 2, 3, 4, 5],
@@ -32,7 +32,7 @@ def return_figures():
                 yaxis = dict(title = 'y-axis label'),
                 )
 
-# second chart plots ararble land for 2015 as a bar chart    
+# second chart plots ararble land for 2015 as a bar chart
     graph_two = []
 
     graph_two.append(
@@ -62,10 +62,10 @@ def return_figures():
                 xaxis = dict(title = 'x-axis label'),
                 yaxis = dict(title = 'y-axis label')
                        )
-    
+
 # fourth chart shows rural population vs arable land
     graph_four = []
-    
+
     graph_four.append(
       go.Scatter(
       x = [20, 40, 60, 80],
@@ -78,12 +78,12 @@ def return_figures():
                 xaxis = dict(title = 'x-axis label'),
                 yaxis = dict(title = 'y-axis label'),
                 )
-    
+
     # append all charts to the figures list
     figures = []
     figures.append(dict(data=graph_one, layout=layout_one))
-    figures.append(dict(data=graph_two, layout=layout_two))
-    figures.append(dict(data=graph_three, layout=layout_three))
-    figures.append(dict(data=graph_four, layout=layout_four))
+#    figures.append(dict(data=graph_two, layout=layout_two))
+#    figures.append(dict(data=graph_three, layout=layout_three))
+#    figures.append(dict(data=graph_four, layout=layout_four))
 
     return figures
